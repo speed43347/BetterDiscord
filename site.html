@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Простой сайт</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f7fb;
+      --card: #ffffff;
+      --text: #1c1f2a;
+      --muted: #5e667a;
+      --accent: #4f46e5;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Inter", system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 48px 20px 24px;
+      text-align: center;
+    }
+
+    header p {
+      color: var(--muted);
+      margin-top: 12px;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+      display: grid;
+      gap: 20px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #eef2ff, #ffffff);
+      border-radius: 18px;
+      padding: 32px;
+      display: grid;
+      gap: 16px;
+      box-shadow: 0 20px 40px rgba(79, 70, 229, 0.1);
+    }
+
+    .hero h2 {
+      font-size: 28px;
+    }
+
+    .hero button {
+      border: none;
+      background: var(--accent);
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      width: fit-content;
+    }
+
+    .cards {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .card {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 14px;
+      border: 1px solid #e1e6f0;
+      display: grid;
+      gap: 8px;
+    }
+
+    .card span {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    footer {
+      padding: 30px 20px 40px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Добро пожаловать на мой сайт</h1>
+    <p>Здесь можно разместить любую информацию: о себе, проекте или компании.</p>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Главная идея</h2>
+      <p>
+        Это простой одностраничный сайт на чистом HTML и CSS. Он легко расширяется,
+        чтобы добавить портфолио, блог или форму обратной связи.
+      </p>
+      <button type="button">Связаться</button>
+    </section>
+
+    <section class="cards">
+      <article class="card">
+        <span>01</span>
+        <h3>Быстрый старт</h3>
+        <p>Готовая структура, чтобы вы могли быстро наполнить сайт контентом.</p>
+      </article>
+      <article class="card">
+        <span>02</span>
+        <h3>Адаптивный дизайн</h3>
+        <p>Сетка автоматически подстраивается под мобильные и большие экраны.</p>
+      </article>
+      <article class="card">
+        <span>03</span>
+        <h3>Чистый код</h3>
+        <p>Минимальный и понятный HTML без лишних библиотек.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Мой сайт. Все права защищены.
+  </footer>
+</body>
+</html>
